@@ -1,79 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agroforte - Futuro Sustentável</title>
-
+    <title>Agrinho 2026: Simulador Sustentável</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1>🌱 Agroforte</h1>
-        <p>Futuro Sustentável: equilíbrio entre produção e meio ambiente</p>
+        <h1>Agro Forte, Futuro Sustentável</h1>
+        <p>Encontre o equilíbrio entre produção e meio ambiente!</p>
     </header>
 
-    <section class="banner">
-        <h2>Tecnologia e Sustentabilidade no Campo</h2>
-        <button onclick="mostrarMensagem()">
-            Ver Solução Sustentável
-        </button>
-    </section>
-
-    <section class="cards">
-
-        <div class="card">
-            <h3>💧 Economia de Água</h3>
-            <p>
-                Irrigação inteligente reduz desperdícios e preserva recursos naturais.
-            </p>
+    <main>
+        <div id="status-bar">
+            <div class="status">Produtividade: <span id="prod-score">50</span>%</div>
+            <div class="status">Meio Ambiente: <span id="env-score">50</span>%</div>
         </div>
 
-        <div class="card">
-            <h3>☀️ Energia Solar</h3>
-            <p>
-                Fazendas sustentáveis usam energia limpa e renovável.
-            </p>
+        <div id="game-container">
+            <h2 id="question-text">Carregando situação...</h2>
+            <div id="options-container">
+                </div>
+            <p id="feedback-text"></p>
         </div>
-
-        <div class="card">
-            <h3>🌳 Preservação Ambiental</h3>
-            <p>
-                Produzir alimentos sem destruir a natureza é o caminho do futuro.
-            </p>
-        </div>
-
-    </section>
-
-    <section class="contador">
-        <h2>Impacto Sustentável</h2>
-
-        <div class="numeros">
-            <div>
-                <h3 id="agua">0</h3>
-                <p>Litros economizados</p>
-            </div>
-
-            <div>
-                <h3 id="energia">0</h3>
-                <p>Energia limpa gerada</p>
-            </div>
-
-            <div>
-                <h3 id="co2">0</h3>
-                <p>CO₂ reduzido</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>
-            Projeto desenvolvido para o Concurso Agrinho 2026
-        </p>
-    </footer>
+    </main>
 
     <script src="script.js"></script>
-
 </body>
 </html>
