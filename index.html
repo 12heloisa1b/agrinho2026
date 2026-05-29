@@ -1,0 +1,60 @@
+HTML
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroFuturo - Agrofloresta Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Agrinho 2026: AgroFuturo</h1>
+        <p>Equilíbrio Perfeito entre Produção e Meio Ambiente</p>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>O que é Agrofloresta?</h2>
+            <p>É um sistema de produção agrícola que imita a natureza. Nele, plantamos alimentos (como milho, café e hortaliças) junto com árvores nativas e frutíferas. Isso recupera o solo, protege a água e ainda gera renda para o agricultor!</p>
+        </section>
+
+        <section class="simulador">
+            <h2>Simulador de Impacto Agroflorestal</h2>
+            <p>Escolha o tamanho da sua área e veja o impacto positivo que a agrofloresta pode causar:</p>
+            
+            <div class="form-group">
+                <label for="hectares">Tamanho da área (em hectares):</label>
+                <input type="number" id="hectares" min="1" value="1">
+            </div>
+
+            <div class="form-group">
+                <label for="tipo">Foco principal da plantação:</label>
+                <select id="tipo">
+                    <option value="subsistencia">Subsistência (Variedade de alimentos)</option>
+                    <option value="comercial">Comercial (Café / Cacau + Árvores)</option>
+                    <option value="recuperacao">Recuperação Ambiental (Foco em árvores nativas)</option>
+                </select>
+            </div>
+
+            <button onclick="calcularImpacto()">Simular Impacto</button>
+
+            <div id="resultado" class="resultado-box hidden">
+                <h3>Resultados Estimados por Ano:</h3>
+                <ul>
+                    <li>🌱 <strong>Carbono Sequestrado:</strong> <span id="carbono">0</span> toneladas de CO₂</li>
+                    <li>💧 <strong>Água Preservada:</strong> <span id="agua">0</span> mil litros</li>
+                    <li>🍎 <strong>Biodiversidade:</strong> <span id="biodiversidade">Alta</span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido para o Concurso Agrinho 2026 • 2º Ano do Ensino Médio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
